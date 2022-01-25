@@ -7,18 +7,19 @@ function App() {
         <div className="logo" />
         <span className="title">Chatter</span>
       </header>
-      <div className="chat-container"> /*Contains all chat bubbles for styling purposes*/
-        <div className="chat-bubble"> /*first chat bubble*/
+      {/*Contains all chat bubbles for styling purposes*/}
+      <div className="chat-container"> 
+        <div className="chat-bubble"> {/*first chat bubble*/}
           hello this is a message
         </div>
-        <div className="chat-bubble"> /*second chat bubble*/
+        <div className="chat-bubble"> {/*second chat bubble*/}
           hi
         </div>
-        <div className="chat-bubble"> /*third chat bubble*/
+        <div className="chat-bubble"> {/*third chat bubble*/}
           yup
         </div>
       </div>
-      <footer className="footer"> /* this has the text box and send button*/
+      <footer className="footer"> {/* this has the text box and send button*/}
         <input className="text-input" />
         <button className="send">
         </button>
