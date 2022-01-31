@@ -1,6 +1,13 @@
 import "./App.css";
+import { useState } from "react"; 
+import TextInput from "./Text-Input";
 
 function App() {
+  {/*Updates the variable messages with whatever the user types -> sent to the text-input component*/}
+  const [messages, setMessages] = useState([]);
+  function sendMessage(text) {
+    setMessages([text, ...messages]);
+  }
   return (
     <div className="App">
       <header className="header">
@@ -8,22 +15,12 @@ function App() {
         <span className="title">Chatter</span>
       </header>
       {/*Contains all chat bubbles for styling purposes*/}
-      <div className="chat-container"> 
-        <div className="chat-bubble"> {/*first chat bubble*/}
-          hello this is a message
-        </div>
-        <div className="chat-bubble"> {/*second chat bubble*/}
-          hi
-        </div>
-        <div className="chat-bubble"> {/*third chat bubble*/}
-          yup
-        </div>
+      <div className="messages">
+        {messages.map((text) => {
+          return <div className="message"> {text} </div>
+        })}
       </div>
-      <footer className="footer"> {/* this has the text box and send button*/}
-        <input className="text-input" />
-        <button className="send">
-        </button>
-      </footer>
+      <TextInput sendMessage={sendMessage} /> {/*Visualizes the messages into message bubble*/}
     </div>
   );
 }

@@ -37,45 +37,20 @@
   margin-left: 1rem;
 }
 
-/*Parent of the text box and button */
-.footer {
-  height: 4rem;
-  width: 100%;
-  border-top: 2px solid white;
+/* Parent of the message bubble*/
+.messages {
   display: flex;
-  align-items: center;
-  padding: 0 .95rem;
-  background: rgba(255, 255, 255, 0.3);
-  position: relative;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  overflow: auto;
+  max-height: calc(100vh - 4rem - 4rem);
+  min-height: calc(100vh - 4rem - 4rem);
+  padding: 1.5rem;
+  font-size: .75rem;
 }
 
-/* text box */
-.text-input {
-  width: 100%;
-  border: 1px solid white;
-  height: 2rem;
-  border-radius: 1rem;
-  padding: 0 1rem;
-  background: black;
-  color: white;
-}
-
-/* send button */
-.send {
-  background: white;
-  border-radius: 50%;
-  border: none;
-  height: 1.8rem;
-  width: 1.8rem;
-  position: absolute;
-  right: 1.05rem;
-  cursor: pointer;
-  background-image: url("https://cdn.pixabay.com/photo/2018/02/04/01/54/paper-planes-3128885_960_720.png");
-  background-size: cover;
-}
-
-/* Stylizes actual chat bubble*/
-.chat-bubble {
+/* Stylizes actual message bubble*/
+.message {
   background: black;
   color: white;
   height: 3rem;
@@ -88,16 +63,8 @@
   position: relative;
 }
 
-/* Parent of the chat bubble*/
-.chat-container {
-  font-size: .75rem;
-  position: absolute;
-  margin-left: 1.5rem;
-  margin-top: 22rem;
-}
-
-/* Puts triangle before chat bubble*/
-.chat-bubble::before {
+/* Puts triangle before message bubble*/
+.message::before {
   content: '';
   position: absolute;
   left: 0;
@@ -110,4 +77,3 @@
   margin-top: -.5rem;
   margin-left: -.5rem;
 }
-
