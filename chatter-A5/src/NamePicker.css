@@ -1,0 +1,30 @@
+.test-b {
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  right: 1.05rem;
+  cursor: pointer;
+  background-image: url("https://cdn.pixabay.com/photo/2018/02/04/01/54/paper-planes-3128885_960_720.png");
+  background-size: cover;
+  }
+
+.text-input2 {
+  width: 100%;
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background: black;
+  color: white;
+  right: 1.05rem;
+  cursor: pointer;
+  margin-left: 54rem;
+}
+
+.hold {
+  display: flex;
+  align-items: flex-end;
+}
