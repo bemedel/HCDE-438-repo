@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react"; 
+import React, { useState } from "react"; 
 import TextInput from "./Text-Input";
 import Camera from 'react-snap-pic'
 import NamePicker from "./NamePicker";
@@ -17,21 +17,23 @@ function App() {
     setShowCamera(false)
   }
 
-
+  let [username, setUsername] = useState("");
 
   return (
     <div className="App">
       <header className="header">
         <div className="logo" />
         <span className="title">Chatter</span>
-        <NamePicker />
+        <NamePicker setUsername={setUsername} />
       </header>
       {/*Turns on the camera when button is clicked*/}
       {showCamera && <Camera takePicture={takePicture} />}
       {/*Contains all chat bubbles for styling purposes*/}
       <div className="messages">
         {messages.map((text) => {
-          return <div className="message"> {text} </div>
+          return <div className="message"> 
+              <span>{text} </span>
+            </div>
         })}
       </div>
       <TextInput sendMessage={sendMessage} 
