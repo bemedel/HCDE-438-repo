@@ -1,0 +1,10 @@
+.header {
+    background-color: lightgrey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12rem;
+    background-position: right;
+    text-align: left;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
