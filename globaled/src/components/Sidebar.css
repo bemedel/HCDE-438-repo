@@ -3,8 +3,8 @@
     position: fixed;
     width: 36px;
     height: 30px;
-    left: 36px;
-    top: 36px;
+    left: 15px;
+    top: 15px;
   }
 
   /* Color/shape of burger icon bars */
@@ -77,4 +77,11 @@
 
   .bm-item:hover {
     color: #ffffff;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
   }

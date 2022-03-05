@@ -1,5 +1,5 @@
 .header {
-    background-color: lightgrey;
+    background-image: url("../img/image\ 3.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 12rem;
@@ -7,4 +7,13 @@
     text-align: left;
     margin-left: 5rem;
     margin-right: 5rem;
+}
+
+.text-background {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+}
+
+button {
+    margin: 1rem;
 }
